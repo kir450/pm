@@ -40,6 +40,8 @@ EOL
 sudo sed -i 's/INTERFACESv4=.*/INTERFACESv4="ens4"/' /etc/default/isc-dhcp-server
 
 # Перезапускаем службы
-sudo systemctl restart isc-dhcp-server
-sudo systemctl enable isc-dhcp-server
 sudo systemctl restart networking
+sudo systemctl enable isc-dhcp-server
+sudo systemctl restart isc-dhcp-server
+
+
