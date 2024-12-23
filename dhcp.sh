@@ -34,6 +34,12 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
    option domain-name-servers 8.8.8.8, 8.8.4.4;
    option domain-name "example.local";
 }
+
+host reserved-host {
+    hardware ethernet AA:BB:CC:DD:EE:FF;
+    fixed-address 192.168.1.150;
+}
+
 EOL
 
 # Указываем интерфейс для isc-dhcp-server
