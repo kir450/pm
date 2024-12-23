@@ -21,8 +21,6 @@ cp -r /etc/dhcp /var/backup/$data
 #Переход в директорию
 cd /var/backup
 
-cpr /etc/dhcp /var/backup/$data
-
 # Архивируем
 tar czfv "./$data.tar.gz" ./$data
 
