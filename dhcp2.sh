@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Обновляем систему и устанавливаем DHCP-сервер
-sudo apt update
+sudo apt update -y
 sudo apt install isc-dhcp-server -y
 
 # Настраиваем сетевые интерфейсы
